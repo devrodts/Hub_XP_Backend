@@ -1,0 +1,15 @@
+### Create Product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "_id": "2s3asao232o49na235n",
+    "name": "Produto Teste 2",
+    "description": "Descrição do produto teste",
+    "price": 100,
+    "colors": ["red", "blue", "green"],
+    "categoryIds": ["1234567890"],
+    "imageUrl": "https://via.placeholder.com/150"
+}
+

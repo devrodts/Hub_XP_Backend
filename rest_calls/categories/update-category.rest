@@ -1,0 +1,15 @@
+### Atualizar uma categoria
+
+PUT http://localhost:3000/categories/66b969a9b969a9b969a9b969
+Content-Type: application/json
+
+
+{
+    "_id": "66b969a9b969a9b969a9b969",
+    "name": "Smartphones",
+    "products": [
+        "64b969a9b969a9b969a9b969",
+        "64b969a9b969a9b969a9b970",
+        "64b969a9b969a9b969a9b971"
+    ]
+}

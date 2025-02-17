@@ -1,0 +1,17 @@
+### Criar uma nova categoria
+
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+
+{
+    "_id": "66b969a9b969a9b969a9b969",
+    "name": "Smartphones",
+    "createdAt": "2024-01-01",
+    "updatedAt": "2024-01-01",
+    "products": [
+        "64b969a9b969a9b969a9b969",
+        "64b969a9b969a9b969a9b970",
+        "64b969a9b969a9b969a9b971"
+    ]
+}

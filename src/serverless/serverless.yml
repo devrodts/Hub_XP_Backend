@@ -1,0 +1,26 @@
+service: order-report-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    MONGO_URI: ${ssm:/mongo/uri}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ssm:GetParameter
+      Resource: arn:aws:ssm:${self:provider.region}:*:parameter/mongo/uri
+
+functions:
+  generateOrderReport:
+    handler: src/handler.generateOrderReport
+    events:
+      - http:
+          path: generate-report
+          method: post
+    timeout: 30
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-include-dependencies

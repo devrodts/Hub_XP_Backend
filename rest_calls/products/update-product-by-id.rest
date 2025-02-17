@@ -1,0 +1,13 @@
+### Update Product by ID
+
+PUT http://localhost:3000/products/66b59832626b742388a11234
+
+{
+     "name": "Novo Nome do Produto",
+     "description": "Nova descrição",
+     "price": 150,
+     "colors": ["yellow", "black"],
+     "categoryIds": ["categoria1", "categoria2"],
+     "imageUrl": "https://via.placeholder.com/150"
+ }
+
